@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - "*.md"
+      - ".gitignore"
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - "*.md"
+      - ".gitignore"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies
+      run: sudo apt-get install uwsgi build-essential libcap-dev libpcre3-dev libssl-dev
+    - uses: actions/checkout@v2
+    - name: make
+      run: make
