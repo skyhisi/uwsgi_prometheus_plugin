@@ -1,4 +1,7 @@
 # uwsgi_prometheus_plugin
+[![Build](https://github.com/skyhisi/uwsgi_prometheus_plugin/actions/workflows/build.yml/badge.svg)](https://github.com/skyhisi/uwsgi_prometheus_plugin/actions/workflows/build.yml)
+[![License: GPL 2](https://img.shields.io/github/license/skyhisi/uwsgi_prometheus_plugin?color=green)](https://github.com/skyhisi/uwsgi_prometheus_plugin/blob/main/LICENSE)
+
 Prometheus exporter for uWSGI as a plugin
 
 This plugin runs a Prometheus exporter inside the uWSGI process which avoids
