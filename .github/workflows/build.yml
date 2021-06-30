@@ -11,6 +11,8 @@ on:
     paths-ignore:
       - "*.md"
       - ".gitignore"
+  schedule:
+    - cron: "42 5 1 * *"
 
 jobs:
   build:
